@@ -16,7 +16,7 @@ public class Question_check {
         System.out.println("Ποια είναι η απάντηση;");
         int a = sc.nextInt();
         
-        if (a == correctAns) {
+        if (a == (correctAns + 1)) {
         	System.out.println("Η απάντηση είναι σωστή!");
         } else {
         	System.out.println("Λάθος! Η σωστή απάντηση είναι: " +op[correctAns]);
