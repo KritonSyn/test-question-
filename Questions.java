@@ -23,6 +23,8 @@ public class Questions {
 	        {"Ο Οδυσσέας","Ο Θησέας", "Ο Ιάσονας"  }
 	        
 	             };
+	 int[] ca = { 1, 1, 0, 2, 1, 2, 2, 1, 0, 2, 0, 0, 1, 0, 0, 1, 2, 0, 1, 2
+			  };
 	
 	  String[] qs = { "Στο νησί ποιας θεάς φιλοξενήθηκε ο Οδυσσέας για επτά χρόνια καθώς προσπαθούσε να επιστρέψει στην Ιθάκη;" ,
 			  "Ποιος θεός φιλοτέχνησε την ασπίδα του Αχιλλέα; ", 
@@ -41,7 +43,7 @@ public class Questions {
 			   };
 	  
 	    public void startQuestions(int n){
-	      Question_check questions = new Question_check(qs[n],answers[n],0,this);
+	      Question_check questions = new Question_check(qs[n],answers[n],ca[n],this);
 	      questions.playq();  
 	        
 	       
